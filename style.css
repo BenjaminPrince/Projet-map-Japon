@@ -1,25 +1,116 @@
-body {
-    font-family: 'Roboto', sans-serif;
-  }
+/* Définition des couleurs complémentaires */
 
-#mapid {
-  width: 800px;
-  height: 600px;
-  margin: auto;
-  border: 2px solid #000000;
+:root {
+--primary-color: #ffb347; 
+--secondary-color: #008b8b; 
+--text-color: #ffffff; 
+--background-color: #000000;  
 }
 
-  
+/* Style général de la page */
+body {
+font-family: 'Montserrat', sans-serif;
+background-color: var(--background-color);
+color: var(--text-color);
+margin: 0;
+}
+
+/* Style de la carte Leaflet */
+#mapid {
+width: 800px;
+height: 600px;
+margin: auto;
+box-shadow: 0px 0px 10px var(--secondary-color);
+}
+
+/* Style de l'en-tête */
+header {
+background-color: var(--primary-color);
+color: white;
+padding: 20px;
+}
+
+/* Style du titre principal */
 h1 {
-    margin: 50px 0;
-    text-align: center;
-    font-weight: 500;
-    font-size: 2.5rem;
-    color: #333333;
-    text-transform: uppercase;
-  }
+margin: 50px 0;
+text-align: center;
+font-weight: 250;
+font-size: 1rem;
+text-transform: uppercase;
+}
 
 
-  img {
-    width: 100%;
+
+/* Style des paragraphes */
+p {
+margin: 20px 0;
+line-height: 1.5;
+}
+
+/* Style des images */
+img {
+display: block;
+width: 100%;
+height: auto;
+margin: 20px 0;
+border-radius: 5px;
+}
+
+
+
+/*---------------------------------------------
+                NEON CSS
+---------------------------------------------*/
+
+
+/* Définition de la police de caractères personnalisée */
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+/* Style de la boîte contenant le texte */
+.container {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Style du texte avec effet néon */
+.neon {
+  font-family: neon;
+  color: #FB4264; /* Couleur de base du texte */
+  font-size: 3vw;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw #F40A35; /* Ombre de base du texte */
+}
+
+
+/* Animation du texte avec effet néon */
+.neon {
+  animation: neon 2s linear infinite;
+  -moz-animation: neon 2s linear infinite;
+  -webkit-animation: neon 2s linear infinite;
+  -o-animation: neon 2s linear infinite;
+}
+
+/* Définition de l'animation avec effet néon */
+@keyframes neon {
+  0%, /* État initial */
+  100% { /* État final */
+    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+    color: #FED128; /* Couleur du texte à l'état final */
   }
+  50% { /* État intermédiaire */
+    text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+    color: #806914; /* Couleur du texte à l'état intermédiaire */
+  }
+}
+
+
+
+
+
+
+
+
