@@ -13,7 +13,7 @@ let mymap = L.map('mapid', {
     id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1,
-    accessToken: 'pk.eyJ1Ijoic3Vla2swIiwiYSI6ImNsZXljc2k0OTAzdDgzcXB1MmpqMHM2dXgifQ.GF-cm931OtQQ004NC7QM6g'
+    accessToken: 'pk.eyJ1Ijoic3Vla2swIiwiYSI6ImNsZXllcmFjeTA0OHUzd3B1YWJldWJjNHQifQ.NbGBkm9RSND7-X17LaPsKw',
     }).addTo(mymap);
 
 // Ajout d'un marqueur pour Tokyo
