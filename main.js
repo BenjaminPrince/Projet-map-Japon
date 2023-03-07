@@ -1,3 +1,7 @@
+// Ajouter un en-tête CORS à la requête
+const headers = new Headers();
+headers.append('Access-Control-Allow-Origin', '*');
+
 // Création de la carte avec le centre sur le Japon
 let mymap = L.map('mapid', {
     center: [35.6804, 139.7690],
@@ -61,5 +65,6 @@ L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png', 
 
 // Définir la langue de la carte en français
 mymap.setLanguage('fr');
+
 
 
