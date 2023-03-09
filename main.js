@@ -11,10 +11,10 @@ let mymap = L.map('mapid', {
 });
 
 // Ajout du fond de carte OpenStreetMap
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
-    maxZoom: 18,
-}).addTo(mymap);
+// L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+//     maxZoom: 18,
+// }).addTo(mymap);
 
 // Ajout d'un marqueur pour Tokyo
 L.marker([35.6828, 139.759]).addTo(mymap)
@@ -61,6 +61,7 @@ L.marker([42.9849, 144.3817]).addTo(mymap)
 L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png', {
     attribution: '',
     maxZoom: 19
+
 }).addTo(mymap);
 
 // Définir la langue de la carte en français
